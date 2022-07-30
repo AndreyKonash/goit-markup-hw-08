@@ -4,6 +4,23 @@
   --main-text-color: #212121;
   --main-subtitle-color: #757575;
 }
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+button {
+  cursor: pointer;
+}
+address {
+  font-style: normal;
+}
 
 body {
   font-family: "Roboto", sans-serif;
@@ -20,7 +37,17 @@ body {
   color: var(--main-accent-color);
 }
 
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  outline: 2px solid red;
+}
+
 /* Шапка сайта */
+.header {
+  padding-top: 24px;
+}
 
 .logo {
   font-family: "Raleway", sans-serif;
@@ -56,6 +83,7 @@ body {
 /* герой */
 .hero {
   background: #2f303a;
+  text-align: center;
 }
 .hero-title {
   font-weight: 900;
@@ -68,16 +96,28 @@ body {
 
 .hero-btn {
   background-color: var(--main-accent-color);
-  cursor: pointer;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
   color: var(--main-title-color);
+  display: inline-block;
+  border-radius: 4px;
+  padding: 10px 32px;
+  border: 1px solid var(--main-accent-color);
+  margin-top: 30px;
+}
+
+.hero-btn:hover {
+  background-color: #188ce8;
 }
 
 /* особенности */
+.section{
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 .features-heading {
   font-weight: 700;
@@ -85,12 +125,15 @@ body {
   line-height: 1.43;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  padding-top: 94px;
+  
 }
 .features-subtitle {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--main-subtitle-color);
+  margin-top: 10px;
 }
 
 /* чем занимаемся */
@@ -99,35 +142,44 @@ body {
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  text-align: center;
 }
 
 /* команда */
+.team{
+  background-color:#F5F4FA;
+}
 .team-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 50px;
 }
 .team-heading {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  margin-top: 30px;
+  text-align: center;
 }
 .team-subtitle {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--main-subtitle-color);
+  margin-top: 10px;
+  text-align: center;
 }
 /* футер */
 
 .footer {
   font-style: normal;
   background: #2f303a;
-}
-.footer-list {
-  font-style: normal;
+  mt
 }
 
 .footer-studio {
@@ -170,9 +222,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--main-text-color);
 }
-.portfolio-btn {
-  cursor: pointer;
-}
+
 .portfolio-btn:hover,
 .portfolio-btn:focus {
   background-color: var(--main-accent-color);
