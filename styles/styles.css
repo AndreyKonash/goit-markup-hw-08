@@ -15,9 +15,17 @@ ul {
   margin: 0;
   padding-left: 0;
 }
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 button {
   cursor: pointer;
 }
+
 address {
   font-style: normal;
   margin-top: 20px;
@@ -43,10 +51,6 @@ body {
   padding: 0 15px;
   margin: 0 auto;
   /* outline: 2px solid red; */
-}
-.img {
-  display: block;
-  max-width: 100%;
 }
 
 /* Шапка сайта */
