@@ -88,9 +88,6 @@ body {
   letter-spacing: 0.02em;
   color: var(--main-subtitle-color);
 }
-/* .header-mail{
-  margin-left: 331px;
-} */
 
 .header-list,
 .header-list-contact {
@@ -190,7 +187,6 @@ body {
 /* чем занимаемся */
 .work {
   padding-top: 0;
-  padding-bottom: 0;
 }
 .work-title {
   font-weight: 700;
