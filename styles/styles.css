@@ -272,15 +272,16 @@ body {
 	font-weight: 700;
 	font-size: 14px;
 	line-height: 1.14;
-	text-align: center;
 	background: rgba(47, 48, 58, 0.8);
 	width: 100%;
 	color: #ffffff;
-	padding-top: 27px;
-	padding-bottom: 27px;
 	position: absolute;
 	bottom: 0;
 	text-transform: uppercase;
+	height: 70px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 /* команда */
@@ -549,7 +550,6 @@ body {
 }
 
 .galery-item {
-	/* width: calc((100%-60px) / 3);        чомусь не працює */
 	width: 370px;
 	margin-right: 30px;
 	margin-bottom: 30px;
@@ -591,7 +591,8 @@ body {
 	overflow: auto;
 }
 
-.galery-item:hover .cover-text {
+.galery-link:hover .cover-text,
+.galery-link:focus .cover-text {
 	transform: translateY(0);
 }
 
