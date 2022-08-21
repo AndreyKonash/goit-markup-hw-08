@@ -432,12 +432,71 @@
 			</div>
 		</footer>
 		<div class="backdrop is-hidden" data-modal>
+			<!-- is-hidden  -->
 			<div class="modal">
 				<button type="button" class="modal-close" data-modal-close>
 					<svg class="modal-icon" width="18" height="18">
 						<use href="./img/close.svg#icon-close"></use>
 					</svg>
 				</button>
+				<p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+				<form class="modal-form">
+					<div class="input-field">
+						<label>
+							<span class="input-title">Имя</span>
+						</label>
+						<div class="input-wrap">
+							<input type="text" class="form-input" name="user-name" placeholder="" required />
+							<svg class="input-icon" width="18" height="18">
+								<use href="./img/icons.svg#icon-person"></use>
+							</svg>
+						</div>
+					</div>
+					<div class="input-field">
+						<label>
+							<span class="input-title">Телефон</span>
+						</label>
+						<div class="input-wrap">
+							<input type="tel" class="form-input" name="user-tel" placeholder="" required minlength="10" />
+							<svg class="input-icon" width="18" height="18">
+								<use href="./img/icons.svg#icon-phone"></use>
+							</svg>
+						</div>
+					</div>
+					<div class="input-field">
+						<label>
+							<span class="input-title">Почта</span>
+						</label>
+						<div class="input-wrap">
+							<input type="email" class="form-input" name="user-email" placeholder="" required />
+							<svg class="input-icon" width="18" height="18">
+								<use href="./img/icons.svg#icon-email"></use>
+							</svg>
+						</div>
+					</div>
+					<div class="input-field">
+						<label for="user-coment" class="input-title">Комментарий</label>
+						<textarea
+							name="user-coment"
+							id="user-coment"
+							class="form-input-coment"
+							placeholder="Введите текст"
+						></textarea>
+					</div>
+					<div class="input-field">
+						<input type="checkbox" name="user-policy" value="true" class="input-check" id="user-policy" />
+						<label for="user-policy" class="check-text">
+							<span class="che-icon">
+								<svg class="check-icon" width="16" height="15">
+									<use href="./img/icons.svg#icon-check"></use>
+								</svg>
+							</span>
+							Соглашаюсь с рассылкой и принимаю
+							<span class="user-terms">Условия договора</span>
+						</label>
+					</div>
+					<button type="submit" class="input-btn">Отправить</button>
+				</form>
 			</div>
 		</div>
 
