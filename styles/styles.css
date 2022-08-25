@@ -467,6 +467,7 @@ body {
 }
 .main-container {
 	display: block;
+	flex-grow: 1;
 }
 .footer-social-link:hover,
 .footer-social-link:focus {
@@ -479,7 +480,7 @@ body {
 .subscription {
 	margin-left: 93px;
 }
-.subscription-section {
+.subscription-form {
 	display: flex;
 }
 .subscription-title {
@@ -512,20 +513,15 @@ body {
 	margin-left: 12px;
 	width: 200px;
 	height: 50px;
-	background-color: inherit;
+	background-color: var(--main-accent-color);
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	border-radius: 4px;
 	border-color: transparent;
-	transition: var(--main-background-transition);
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.subscription-btn:hover,
-.subscription-btn:focus {
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-	background-color: var(--main-accent-color);
-}
 .subscription-icon {
 	fill: var(--main-title-color);
 }
@@ -749,6 +745,7 @@ body {
 	color: var(--main-text-color);
 	resize: none;
 	transition: outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	display: block;
 }
 .form-input-coment:focus {
 	outline-color: var(--main-accent-color);
@@ -789,6 +786,7 @@ body {
 	color: var(--main-subtitle-color);
 	display: flex;
 	align-items: center;
+	justify-content: center;
 }
 
 .che-icon {
@@ -796,7 +794,6 @@ body {
 	height: 15px;
 	border: 2px solid #212121;
 	border-radius: 3px;
-	margin-left: 12px;
 	margin-right: 8px;
 	display: flex;
 	align-items: center;
@@ -813,6 +810,10 @@ body {
 
 .input-check:checked + .check-text .check-icon {
 	fill: var(--main-title-color);
+}
+
+.check-field {
+	margin-top: 20px;
 }
 
 /* .check-text::before {
@@ -847,11 +848,11 @@ body {
 	border: transparent;
 	font-weight: 700;
 	font-size: 16px;
-	line-height: 30px;
+	line-height: 1.88;
 	padding: 10px 55px;
 	letter-spacing: 0.06em;
 	color: #ffffff;
-	margin: 30px auto;
+	margin: 30px auto 0;
 	display: block;
 	transition: var(--main-background-transition);
 }

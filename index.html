@@ -431,15 +431,15 @@
 				</div>
 				<div class="subscription">
 					<p class="subscription-title">Подпишитесь на рассылку</p>
-					<div class="subscription-section">
-						<input type="email" class="subscription-input" name="subscription-email" placeholder="E-mail" />
+					<form class="subscription-form">
+						<input type="email" class="subscription-input" name="subscription-email" placeholder="E-mail" required />
 						<button type="submit" class="subscription-btn">
 							Подписаться
 							<svg class="subscription-icon" width="24" height="24">
 								<use href="./img/icons.svg#icon-send"></use>
 							</svg>
 						</button>
-					</div>
+					</form>
 				</div>
 			</div>
 		</footer>
@@ -454,39 +454,41 @@
 				<p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
 				<form class="modal-form">
 					<div class="input-field">
-						<label>
-							<span class="input-title">Имя</span>
-						</label>
+						<label for="user-name" class="input-title">Имя</label>
 						<div class="input-wrap">
-							<input type="text" class="form-input" name="user-name" placeholder="" required />
+							<input type="text" class="form-input" name="user-name" placeholder="" required id="user-name" />
 							<svg class="input-icon" width="18" height="18">
 								<use href="./img/icons.svg#icon-person"></use>
 							</svg>
 						</div>
 					</div>
 					<div class="input-field">
-						<label>
-							<span class="input-title">Телефон</span>
-						</label>
+						<label for="user-tel" class="input-title">Телефон</label>
 						<div class="input-wrap">
-							<input type="tel" class="form-input" name="user-tel" placeholder="" required minlength="10" />
+							<input
+								type="tel"
+								class="form-input"
+								name="user-tel"
+								placeholder=""
+								required
+								minlength="10"
+								id="user-tel"
+							/>
 							<svg class="input-icon" width="18" height="18">
 								<use href="./img/icons.svg#icon-phone"></use>
 							</svg>
 						</div>
 					</div>
 					<div class="input-field">
-						<label>
-							<span class="input-title">Почта</span>
-						</label>
+						<label for="user-email" class="input-title">Почта</label>
 						<div class="input-wrap">
-							<input type="email" class="form-input" name="user-email" placeholder="" required />
+							<input type="email" class="form-input" name="user-email" placeholder="" required id="user-email" />
 							<svg class="input-icon" width="18" height="18">
 								<use href="./img/icons.svg#icon-email"></use>
 							</svg>
 						</div>
 					</div>
-					<div class="input-field">
+					<div class="">
 						<label for="user-coment" class="input-title">Комментарий</label>
 						<textarea
 							name="user-coment"
@@ -495,7 +497,7 @@
 							placeholder="Введите текст"
 						></textarea>
 					</div>
-					<div class="input-field">
+					<div class="check-field">
 						<input type="checkbox" name="user-policy" value="true" class="input-check" id="user-policy" />
 						<label for="user-policy" class="check-text">
 							<span class="che-icon">
