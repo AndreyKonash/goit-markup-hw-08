@@ -1,0 +1,21 @@
+@import "./utils/variables";
+@import "./utils/placeholders";
+@import "./utils/backdrop";
+@import "./base/common-style";
+
+@import "./components/section";
+@import "./components/container";
+@import "./components/logo";
+@import "./components/site-nav";
+@import "./components/contacts";
+@import "./components/modal";
+
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/features";
+@import "./layout/works";
+@import "./layout/team";
+@import "./layout/clients";
+@import "./layout/footer";
+@import "./layout/portfolio";
+@import "./layout/galery";

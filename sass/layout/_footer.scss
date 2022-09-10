@@ -1,0 +1,116 @@
+.footer {
+	background: #2f303a;
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+.footer__container {
+	display: flex;
+	align-items: baseline;
+}
+.container-contacts {
+	display: block;
+	flex-grow: 1;
+}
+
+.info__mail,
+.info__tel,
+.info__map {
+	font-size: 14px;
+	line-height: 1.71;
+	letter-spacing: 0.03em;
+	color: rgba(255, 255, 255, 0.6);
+}
+.info__map {
+	color: var(--main-title-color);
+}
+
+.info .info__item + .info__item {
+	margin-top: 9px;
+}
+
+.social-networks {
+	margin-left: 70px;
+}
+
+.social-networks__subtitle {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 16px;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: #ffffff;
+	margin-bottom: 20px;
+}
+
+.social-networks__list {
+	display: flex;
+	gap: 10px;
+}
+
+.social-networks__link {
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	background-color: rgba(255, 255, 255, 0.1);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: var(--main-background-transition);
+}
+
+.social-networks__link:hover,
+.social-networks__link:focus {
+	background-color: var(--main-accent-color);
+}
+.social-networks__icon {
+	fill: var(--main-title-color);
+}
+
+.subscription {
+	margin-left: 93px;
+}
+.subscription__form {
+	display: flex;
+}
+.subscription__title {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 16px;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: var(--main-title-color);
+	margin-bottom: 20px;
+}
+
+.subscription__input {
+	background-color: inherit;
+	color: var(--main-title-color);
+	width: 358px;
+	height: 50px;
+	padding-left: 16px;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+	border-radius: 4px;
+}
+.subscription__btn {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 30px;
+	letter-spacing: 0.06em;
+	color: #ffffff;
+	padding: 10px 28px;
+	margin-left: 12px;
+	width: 200px;
+	height: 50px;
+	background-color: var(--main-accent-color);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-radius: 4px;
+	border-color: transparent;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.subscription__btn-icon {
+	fill: var(--main-title-color);
+}
