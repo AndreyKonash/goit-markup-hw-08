@@ -1,13 +1,12 @@
 .features {
 	display: flex;
+	width: 100%;
 	flex-wrap: wrap;
+	gap: 30px;
 }
 
 .features__item {
-	width: 270px;
-}
-.features .features__item + .features__item {
-	margin-left: 30px;
+	width: 100%;
 }
 
 .features__title {
@@ -16,8 +15,8 @@
 	line-height: 1.43;
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
-	margin-top: 30px;
 }
+
 .features__text {
 	font-size: 14px;
 	line-height: 1.71;
@@ -29,7 +28,6 @@
 .features__icon-box {
 	background-color: #f5f4fa;
 	border-radius: 4px;
-	width: 270px;
 	height: 120px;
 	display: flex;
 	align-items: center;
