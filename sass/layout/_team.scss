@@ -1,4 +1,4 @@
-.section__team {
+.section-team--other-bg {
 	background-color: #f5f4fa;
 	width: 100%;
 }
@@ -59,12 +59,13 @@
 	justify-content: center;
 	color: #afb1b8;
 	transition: var(--main-background-transition);
+	&:hover,
+	&:focus {
+		background-color: var(--main-accent-color);
+		color: var(--main-title-color);
+	}
 }
-.social-web__link:hover,
-.social-web__link:focus {
-	background-color: var(--main-accent-color);
-	color: var(--main-title-color);
-}
+
 .social-web__icon {
 	fill: currentColor;
 	transition: var(--main-fill-transition);

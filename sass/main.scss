@@ -1,8 +1,10 @@
 @import "./utils/variables";
+@import "./utils/mixins";
 @import "./utils/placeholders";
 @import "./utils/backdrop";
 @import "./base/common-style";
 
+@import "./components/mob-menu";
 @import "./components/section";
 @import "./components/container";
 @import "./components/logo";

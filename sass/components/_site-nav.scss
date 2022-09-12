@@ -1,8 +1,16 @@
+.navigation {
+	@media screen and (max-width: 767px) {
+		display: none;
+	}
+	@media screen and (min-width: 1200px) {
+		margin-right: auto;
+	}
+}
 .site-nav {
 	display: flex;
 }
 
-.site-nav .site-nav__item + .site-nav__item {
+.site-nav__item:not(:first-child) {
 	margin-left: 50px;
 }
 
@@ -17,16 +25,16 @@
 	transition: var(--main-color-transition);
 	position: relative;
 	display: block;
-}
-.site-nav__link:hover,
-.site-nav__link:focus {
-	color: var(--main-accent-color);
+	&:hover,
+	&:focus {
+		color: var(--main-accent-color);
+	}
 }
 
-.active {
+.site-nav__link--active {
 	color: var(--main-accent-color);
 }
-.active::after {
+.site-nav__link--active::after {
 	content: "";
 	width: 100%;
 	height: 4px;
