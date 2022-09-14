@@ -21,6 +21,8 @@
 .clients__link {
 	border: 1px solid #afb1b8;
 	border-radius: 4px;
+	width: 100%;
+	height: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -28,13 +30,13 @@
 	&:hover,
 	&:focus {
 		border: 1px solid var(--main-accent-color);
+		.client__icon {
+			fill: #afb1b8;
+			transition: var(--main-fill-transition);
+		}
 	}
 }
 
-.client__icon {
-	fill: #afb1b8;
-	transition: var(--main-fill-transition);
-}
 .clients__link:hover .client__icon,
 .clients__link:focus .client__icon {
 	fill: var(--main-accent-color);
