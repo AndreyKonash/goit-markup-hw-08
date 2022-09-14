@@ -583,6 +583,7 @@ a {
 
 .hero {
   background: #2f303a;
+  max-width: 1600px;
   text-align: center;
   padding-top: 118px;
   padding-bottom: 118px;
@@ -850,7 +851,9 @@ a {
 }
 
 .clients__link {
+  display: block;
   border: 1px solid #afb1b8;
+  fill: #afb1b8;
   border-radius: 4px;
   width: 100%;
   height: 100%;
@@ -863,12 +866,6 @@ a {
   border: 1px solid var(--main-accent-color);
 }
 .clients__link:hover .client__icon, .clients__link:focus .client__icon {
-  fill: #afb1b8;
-  transition: var(--main-fill-transition);
-}
-
-.clients__link:hover .client__icon,
-.clients__link:focus .client__icon {
   fill: var(--main-accent-color);
 }
 
